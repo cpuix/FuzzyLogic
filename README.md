@@ -3,7 +3,7 @@
 ## English
 Strategic planning and profit / loss estimation for institutions by using fuzzy logic method.
 
-### Membership Functions - Üyelik Fonksiyonları
+### Membership Functions
 Criteria: Population of the province, proximity of the center to the center, land price, land size.
 
 *	The more the population of the province the better,
