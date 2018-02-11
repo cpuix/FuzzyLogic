@@ -24,6 +24,8 @@ Bu kriterlere göre iller 0-10 arası puan almaktadır. 0 en kötü, 10 en iyi p
 * B İli, 190.000 nüfuslu, arsanın merkeze uzaklığı 1 km mesafe, arsa fiyatı 1.000.000 TL ve 3000 metrekare.
 * C İli, 90.000 nüfuslu, arsanın merkeze uzaklığı 3 km mesafe, arsa fiyatı 3.000.000 TL ve 2450 metrekare.
 
+Tanımlı Kurallar:
+![alt text](https://i0.wp.com/kerembahcivan.com/wp-content/uploads/2018/02/FuzzyLogicRules.png?w=973&ssl=1)
 
 ## Screenshots / Ekran Görüntüleri
 ![alt text](https://raw.githubusercontent.com/kerembahcivan/FuzzyLogic/master/1.jpeg)
