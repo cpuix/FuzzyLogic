@@ -1,0 +1,58 @@
+[System]
+Name='Company'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=6
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='population'
+Range=[0 200]
+NumMFs=2
+MF1='low':'gauss2mf',[68 -20 68 -34.2966857638565]
+MF2='high':'gauss2mf',[68 189.852241319412 68 221]
+
+[Input2]
+Name='howclose'
+Range=[0 10]
+NumMFs=2
+MF1='close':'trimf',[-8.68 0.0925925925925926 11.3]
+MF2='far':'trimf',[-0.74 9.907 19.3]
+
+[Input3]
+Name='cost'
+Range=[1 5]
+NumMFs=3
+MF1='cheap':'trimf',[-0.6 1 2.6]
+MF2='normal':'trimf',[1.4 3 4.6]
+MF3='expensive':'trimf',[3.4 5 6.6]
+
+[Input4]
+Name='area'
+Range=[0 5000]
+NumMFs=3
+MF1='small':'gauss2mf',[679.5 -200 679.5 200]
+MF2='optimum':'gauss2mf',[832.9 2500 945 2500]
+MF3='big':'gauss2mf',[679.5 4800 679.5 5200]
+
+[Output1]
+Name='score'
+Range=[0 10]
+NumMFs=3
+MF1='bad':'trimf',[-4 0 3.45238095238095]
+MF2='avarage':'trimf',[2.39417989417989 5 7.02]
+MF3='good':'trimf',[6.62698412698413 10 14]
+
+[Rules]
+2 0 1 0, 3 (1) : 1
+2 2 2 2, 2 (1) : 1
+1 2 3 3, 1 (1) : 1
+1 2 1 2, 2 (1) : 1
+1 2 3 1, 1 (1) : 1
+1 1 2 2, 2 (1) : 1
